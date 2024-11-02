@@ -31,7 +31,7 @@ const HabitList: React.FC = () => {
     };
 
     return (
-        <Box sx={{ display: "flex", flexDirection: "column", gap: 2, mt: 4 }}>
+        <Box sx={{ display: "flex", flexDirection: "column", gap: 1, mt: 2 }}>
             {habits.map((habit) => {
                 const isCompletedToday = habit.completedDates.includes(today);
                 const streak = getStreak(habit); // Calculate streak based on current state
